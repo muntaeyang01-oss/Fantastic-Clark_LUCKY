@@ -1,0 +1,7 @@
+{
+  "name": "FANTASTIC CLARK",
+  "description": "A luxury casino agency management platform with a fully customizable CMS, admin dashboard, and AI-powered content generation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

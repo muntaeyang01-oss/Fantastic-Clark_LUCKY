@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
-import { SiteConfig, Post } from './types';
-import { INITIAL_CONFIG, SAMPLE_POSTS } from './constants';
-import Layout from './components/Layout';
-import AdminPanel from './components/AdminPanel';
+import { SiteConfig, Post } from './types.ts';
+import { INITIAL_CONFIG, SAMPLE_POSTS } from './constants.tsx';
+import Layout from './components/Layout.tsx';
+import AdminPanel from './components/AdminPanel.tsx';
 
 const App: React.FC = () => {
   const [config, setConfig] = useState<SiteConfig>(() => {
@@ -55,7 +55,7 @@ const App: React.FC = () => {
         
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <h2 
-            className="text-sm font-bold tracking-[0.3em] uppercase mb-4 animate-fade-in"
+            className="text-sm font-bold tracking-[0.3em] uppercase mb-4"
             style={{ color: config.primaryColor }}
           >
             {config.tagline}

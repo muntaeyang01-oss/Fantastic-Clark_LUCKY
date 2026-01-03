@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { SiteConfig, Post, AdminTab } from '../types';
-import { generateBlogPost } from '../services/geminiService';
+import { SiteConfig, Post, AdminTab } from '../types.ts';
+import { generateBlogPost } from '../services/geminiService.ts';
 
 interface AdminPanelProps {
   config: SiteConfig;

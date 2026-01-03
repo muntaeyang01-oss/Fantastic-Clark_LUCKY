@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SiteConfig } from '../types';
+import { SiteConfig } from '../types.ts';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -83,7 +83,7 @@ const Layout: React.FC<LayoutProps> = ({ children, config, onAdminToggle, isAdmi
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 text-center text-gray-600 text-xs">
-          © 2024 FANTASTIC CLARK. All Rights Reserved.
+          © 2024 {config.siteName}. All Rights Reserved.
         </div>
       </footer>
     </div>
